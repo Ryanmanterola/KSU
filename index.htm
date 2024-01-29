@@ -25,9 +25,11 @@
         color: white;
     }
 
-    #container{
+    .container{
         height:100%;
         background-color: cornsilk;
+        margin-left:25%;
+        margin-right:25%;
     }
     header{
         padding: 16px;
@@ -49,22 +51,58 @@
         <h2> Ryan's Cheatsheet</h2>
             
     </nav>
+
+    <div class="container">
     <header>
         <img src="imgs/fullstack.jpg" width="25%">
        <h1> Test</h1>
 
     </header>
 
-    <div class="container">
+
         <div>
             <h1> Introduction </h1>
-            <p> </p>
+            <p>Mongoose: Understand the basics of creating schemas and modeling data. </p>
+            <p>What is a schema?
+                In computer programming, a schema (pronounced SKEE-mah) is the organization or structure for a database, while in artificial intelligence (AI) a schema is a formal expression of an inference rule.
+                
+                For the former, the activity of data modeling leads to a schema. In the latter, a schema is derived from mathematics and is -- essentially -- a generalized axiom or expression where specific values or cases are substituted for symbols in a hypothesis to derive a particular inference.
+                
+                The word schema originates in the Greek word for form or figure. However, how you specifically define schema depends on context. There are different types of schemas, and their meanings are closely related to fields like data science, education, marketing and SEO (search engine optimization) and psychology.</p>
 
         </div>
 
         <div>
             <h3> Setup </h3>
             <p> Setup </p>
+            How to install Mongoose
+You require Node.js and npm (the package manager for Node.js) in order to install Mongoose on your computer.
+
+Assuming you have node installed, you can go ahead to install Mongoose using the following npm command:
+
+
+COPY
+
+COPY
+npm install mongoose
+By running the command above, you will have Mongoose installed and added to your project's dependencies.
+
+This can also be achieved with the use of the --save flag, which will also add it to your project's dependencies in the package.json file:
+
+
+COPY
+
+COPY
+npm install --save mongoose
+After installing Mongoose on your computer and adding it to your project's dependencies, you can use it by requiring it in any of the files where you would want to interact with your MongoDB database. One of these files is likely to be your server.js file or index.js file depending on the naming convention you choose to go with.
+
+If you are using the MVC (Model Controller View) architecture for your app, then you may need to require it in all your models. Use the command below to require Mongoose in your script:
+
+
+COPY
+
+COPY
+const mongoose = require('mongoose');
             <table cellspacing="0" cellpadding="0">
                 <tbody>
                     <tr>
